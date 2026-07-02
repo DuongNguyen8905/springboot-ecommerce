@@ -30,7 +30,6 @@ public class OrderService {
         }
 
         //  Validate for user
-
         Optional<User>userOptional = userRepository.findById(Long.valueOf(userId));
         if (userOptional.isEmpty()){
             return Optional.empty();
